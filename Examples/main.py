@@ -84,6 +84,8 @@ print(num_list[0])  # Output: 0
 print(num_list[5])  # Output: 5
 print(str_list[4])  # Output: O
 # ! Note that all indexes start from 0
+print(str_list)
+
 
 
 # A dictionary
@@ -104,3 +106,11 @@ Since reference types take up more space than primitive types, they will be
 instantiated on the heap, with a pointer that is created in the stack that 
 references the actual object that is in the heap.
 '''
+
+str_list = ["F", "O", "R", "T", "N", "I", "T", "E"]
+
+print("\n")
+for i in range(len(str_list)):
+    print(str_list[i])
+
+
