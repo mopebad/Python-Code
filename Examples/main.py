@@ -1,3 +1,4 @@
+import time
 x = 1
 print("Original value: ", x)
 x = x + 1
@@ -60,6 +61,7 @@ while i > 0:
 # Example of a for loop:
 for i in range(9):
     print("Hello")
+    print(i)
 
 '''
 Here we see that the while loop is in the form of:
@@ -79,13 +81,14 @@ num_list = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 # An example of a list of strings
 str_list = ["H", "E", "L", "L",  "O"]
 
+lst = [1, "H", False]
+
 # To access a value stored in a list, we need to use the index.
 print(num_list[0])  # Output: 0
 print(num_list[5])  # Output: 5
 print(str_list[4])  # Output: O
 # ! Note that all indexes start from 0
 print(str_list)
-
 
 
 # A dictionary
@@ -106,11 +109,21 @@ Since reference types take up more space than primitive types, they will be
 instantiated on the heap, with a pointer that is created in the stack that 
 references the actual object that is in the heap.
 '''
+print("\n")
+for i in range(len(str_list)):
+    print(f"Iteration {i}: {str_list[i]}")
+
+
+def count_down(sec: int):
+    for seconds in range(sec, 0, -1):
+        print(seconds)
+        time.sleep(1)
+
+
+count_down(15)
 
 str_list = ["F", "O", "R", "T", "N", "I", "T", "E"]
 
 print("\n")
 for i in range(len(str_list)):
     print(str_list[i])
-
-
