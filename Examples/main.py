@@ -88,6 +88,7 @@ print(num_list[0])  # Output: 0
 print(num_list[5])  # Output: 5
 print(str_list[4])  # Output: O
 # ! Note that all indexes start from 0
+print(str_list)
 
 
 # A dictionary
@@ -120,3 +121,9 @@ def count_down(sec: int):
 
 
 count_down(15)
+
+str_list = ["F", "O", "R", "T", "N", "I", "T", "E"]
+
+print("\n")
+for i in range(len(str_list)):
+    print(str_list[i])
