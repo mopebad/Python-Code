@@ -127,3 +127,26 @@ str_list = ["F", "O", "R", "T", "N", "I", "T", "E"]
 print("\n")
 for i in range(len(str_list)):
     print(str_list[i])
+
+
+# If statements:
+'''
+if the temperature is negative, we will go skiing; 
+if it is above 0, we will go biking, and 
+if it is too hot (over 25 degrees celsius), we will go swimming
+'''
+
+# * Take the temperature from the user.
+temperature: int = int(input("Please enter the temperature: "))
+activity: str = ""
+
+
+# * Form the if... elif... else statements.
+if (temperature > 25):
+    activity = "swimming"
+elif (temperature > 0):
+    activity = "biking"
+else:
+    activity = "skiing"
+
+print("The chosen activity: " + activity)
