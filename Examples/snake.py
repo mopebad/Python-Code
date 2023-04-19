@@ -4,12 +4,12 @@ import time
 import random
 
 
-speed = 9
+speed = 7
 
 # windows sizes
 
-frame_size_x = 1920
-frame_size_y = 1080
+frame_size_x = 1600
+frame_size_y = 900
 
 
 check_errors = pygame.init()
