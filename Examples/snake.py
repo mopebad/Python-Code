@@ -135,3 +135,5 @@ while True:
     show_score(1, white, 'consolas', 20)
     pygame.display.update()
     fps_controller.tick(speed)
+    
+
